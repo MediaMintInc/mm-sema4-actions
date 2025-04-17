@@ -1,0 +1,35 @@
+{
+    "inputs": [
+        {
+            "inputName": "input-1",
+            "inputValue": {
+                "gam_csv": "data/G.csv",
+                "cm360_csv": "data/C.csv",
+                "dtypes": {
+                    "Creative ID": "str",
+                    "Ad server impressions": "int64",
+                    "Ad server clicks": "int64",
+                    "Ad server CTR": "float64"
+                }
+            }
+        }
+    ],
+    "metadata": {
+        "actionName": "upload_reports",
+        "actionRelativePath": "actions.py",
+        "schemaDescription": [
+            "gam_csv: string: GAM report filepath.",
+            "cm360_csv: string: CM360 report filepath.",
+            "dtypes: object: Dictionary mapping column names to desired data types. Eg. {column_name_1: int, column_name_2: str, column_name_3: float, ...}"
+        ],
+        "managedParamsSchemaDescription": {
+            "request": {
+                "type": "Request",
+                "description": "Request object with headers."
+            }
+        },
+        "inputFileVersion": "v3",
+        "kind": "action",
+        "actionSignature": "action/args: 'request: Request, gam_csv: str, cm360_csv: str, dtypes: dict'"
+    }
+}

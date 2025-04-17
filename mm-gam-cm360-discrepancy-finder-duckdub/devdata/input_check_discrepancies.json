@@ -1,0 +1,26 @@
+{
+    "inputs": [
+        {
+            "inputName": "input-1",
+            "inputValue": {
+                "sql_query": ""
+            }
+        }
+    ],
+    "metadata": {
+        "actionName": "check_discrepancies",
+        "actionRelativePath": "actions.py",
+        "schemaDescription": [
+            "sql_query: string: SQL query to detect discrepancies."
+        ],
+        "managedParamsSchemaDescription": {
+            "request": {
+                "type": "Request",
+                "description": "Request object with thread ID."
+            }
+        },
+        "inputFileVersion": "v3",
+        "kind": "action",
+        "actionSignature": "action/args: 'request: Request, sql_query: str'"
+    }
+}

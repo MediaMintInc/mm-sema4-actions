@@ -1,0 +1,28 @@
+{
+    "inputs": [
+        {
+            "inputName": "input-1",
+            "inputValue": {
+                "csv_path": "data/G.csv",
+                "dtypes": {
+                    "Creative ID": "str",
+                    "Ad server impressions": "int64",
+                    "Ad server clicks": "int64",
+                    "Ad server CTR": "float64"
+                }
+            }
+        }
+    ],
+    "metadata": {
+        "actionName": "clean_csv_data",
+        "actionRelativePath": "actions.py",
+        "schemaDescription": [
+            "csv_path: string: File path to the input CSV file.",
+            "dtypes: object: Dictionary mapping column names to desired data types."
+        ],
+        "managedParamsSchemaDescription": {},
+        "inputFileVersion": "v3",
+        "kind": "action",
+        "actionSignature": "action/args: 'csv_path: str, dtypes: dict'"
+    }
+}
